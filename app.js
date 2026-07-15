@@ -1,6 +1,6 @@
 const sampleSurveys = window.MOAFORM_SURVEYS || [];
 const SURVEYS_PER_PAGE = 6;
-const DEFAULT_SURVEY_URL = "https://github.com/bythehorns-netizen/MVP_BAEPO";
+const DEFAULT_SURVEY_URL = "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform";
 
 let surveys = [...sampleSurveys];
 let selectedCategory = "전체";

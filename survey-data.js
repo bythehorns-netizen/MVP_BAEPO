@@ -11,7 +11,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-2",
     privacy: "연령대·소비 경험",
     researcher: "모아리서치",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#eef0ff",
     ink: "#425bea"
   },
@@ -27,7 +27,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-1",
     privacy: "직업군·서비스 경험",
     researcher: "테크인사이트랩",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#e4f7ed",
     ink: "#147a4c"
   },
@@ -43,7 +43,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-4",
     privacy: "연령대·식품 선호",
     researcher: "데일리푸드",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#fff3cc",
     ink: "#9a6a00"
   },
@@ -59,7 +59,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-5",
     privacy: "학습 단계·수강 경험",
     researcher: "배움연구소",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#ffeae4",
     ink: "#c34d3d"
   },
@@ -75,7 +75,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-3",
     privacy: "거주 형태·연령대",
     researcher: "어반리빙랩",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#e9f4ff",
     ink: "#2471a8"
   },
@@ -91,7 +91,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-7",
     privacy: "결제 서비스 경험",
     researcher: "UX그로스팀",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#f2eaff",
     ink: "#7651b6"
   },
@@ -107,7 +107,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-6",
     privacy: "연령대·뷰티 구매 경험",
     researcher: "뷰티인사이트",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#eef7dd",
     ink: "#4f7224"
   },
@@ -123,7 +123,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-4",
     privacy: "연령대·배달앱 이용 경험",
     researcher: "푸드트렌드랩",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#e2f8f6",
     ink: "#16847c"
   },
@@ -139,7 +139,7 @@ window.MOAFORM_SURVEYS = [
     deadline: "D-8",
     privacy: "연령대·AI 도구 사용 경험",
     researcher: "에듀테크리서치",
-    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfm_HHdA645PWMGS9RXm9cn0i0CzyPn1H9Pw01KksyLGBaTXQ/viewform",
+    surveyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSexARO0O9CMZxNB6P5hseRdjt4emwCHwju9IfGi6s5SWo5b3g/viewform",
     color: "#e7f3ff",
     ink: "#1d66aa"
   }
