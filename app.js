@@ -95,7 +95,7 @@ function createSurveyCard(survey) {
       <span class="privacy-badge">${escapeHTML(survey.privacy)}만 수집</span>
       <div class="card-bottom">
         <div><span class="reward-label">추첨 경품</span><strong class="reward-value">${formatReward(survey.reward)}</strong></div>
-        <div class="slots"><span>${Number(survey.remaining)}자리 남음</span><div class="slot-track"><i style="width:${filledPercentage}%"></i></div></div>
+        <div class="slots"><span>내일 15시까지 약 ${getRemainingTimeText()}</span><div class="slot-track"><i style="width:${filledPercentage}%"></i></div></div>
       </div>
       <button class="card-hit" type="button" data-survey-id="${escapeHTML(survey.id)}" aria-label="${escapeHTML(survey.title)} 자세히 보기"></button>
     </article>`;
