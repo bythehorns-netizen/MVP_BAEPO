@@ -39,6 +39,22 @@ function formatReward(value) {
   return escapeHTML(value || "경품 확인 중");
 }
 
+function getRemainingTimeText() {
+  const now = new Date();
+  const target = new Date(now);
+  target.setDate(target.getDate() + 1);
+  target.setHours(15, 0, 0, 0);
+
+  const diffMs = Math.max(0, target.getTime() - now.getTime());
+  const totalMinutes = Math.floor(diffMs / 60000);
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+
+  if (hours > 0 && minutes > 0) return `${hours}시간 ${minutes}분`;
+  if (hours > 0) return `${hours}시간`;
+  return `${minutes}분`;
+}
+
 function renderFeaturedSurvey() {
   if (!surveys.length) return;
   const survey = surveys[Math.floor(Math.random() * surveys.length)];
@@ -116,7 +132,7 @@ function openSurveyModal(id) {
     <div class="modal-facts">
       <div><span>예상 시간</span><strong>약 ${Number(survey.duration)}분</strong></div>
       <div><span>추첨 경품</span><strong>${formatReward(survey.reward)}</strong></div>
-      <div><span>남은 자리</span><strong>${Number(survey.remaining)}명</strong></div>
+      <div><span>남은 시간</span><strong>내일 15시까지 약 ${getRemainingTimeText()}</strong></div>
     </div>
     <div class="draw-box">
       <strong>◎ CASH CHECK가 직접 추첨해요</strong>
