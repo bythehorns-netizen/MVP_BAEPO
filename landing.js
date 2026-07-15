@@ -68,4 +68,31 @@ function renderOpeningPrizes() {
   }).join("");
 }
 
+function showDeploymentNotice() {
+  const notice = document.getElementById("deploymentNotice");
+  const closeButton = document.getElementById("deploymentNoticeClose");
+  if (!notice || !closeButton) return;
+
+  const hasSeenNotice = window.sessionStorage.getItem("cashcheckDeploymentNoticeSeen") === "true";
+  if (hasSeenNotice) return;
+
+  const closeNotice = () => {
+    window.sessionStorage.setItem("cashcheckDeploymentNoticeSeen", "true");
+    notice.hidden = true;
+    document.body.classList.remove("modal-open");
+  };
+
+  closeButton.addEventListener("click", closeNotice);
+  notice.addEventListener("click", (event) => {
+    if (event.target === notice) closeNotice();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !notice.hidden) closeNotice();
+  }, { once: true });
+
+  notice.hidden = false;
+  document.body.classList.add("modal-open");
+}
+
 renderOpeningPrizes();
+showDeploymentNotice();
