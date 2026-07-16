@@ -63,7 +63,7 @@ function renderOpeningPrizes() {
           <strong>${escapeHTML(prize.winners)} 당첨</strong>
           <p>${escapeHTML(survey.title)} · 약 ${Number(survey.duration)}분</p>
         </div>
-        <a class="prize-hit" href="${destination}" aria-label="${escapeHTML(prize.name)} 경품 설문으로 이동"></a>
+        <a class="prize-hit" href="${destination}" aria-label="${escapeHTML(prize.name)} 경품 설문으로 이동" data-analytics-event="landing_gifticon_click" data-analytics-label="${escapeHTML(prize.name)}" data-survey-id="${escapeHTML(survey.id)}" data-prize-name="${escapeHTML(prize.name)}" data-prize-provider="${escapeHTML(theme.provider)}"></a>
       </article>`;
   }).join("");
 }

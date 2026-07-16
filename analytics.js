@@ -70,13 +70,16 @@
       page_title: document.title,
       survey_id: element.dataset.surveyId || "",
       survey_category: element.dataset.category || "",
+      prize_name: element.dataset.prizeName || "",
+      prize_provider: element.dataset.prizeProvider || "",
       transport_type: "beacon"
     };
   }
 
   function sendClickEvent(element) {
     if (typeof window.gtag !== "function") return;
-    window.gtag("event", "button_click", getClickParams(element));
+    const eventName = element.dataset.analyticsEvent || "button_click";
+    window.gtag("event", eventName, getClickParams(element));
   }
 
   document.addEventListener("click", function (event) {
