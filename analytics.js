@@ -27,23 +27,50 @@
     return element.getAttribute("role") || "clickable";
   }
 
-  function findSectionId(element) {
-    return element.closest("section, header, footer, main, nav, article")?.id || "";
+  function getContainerName(element) {
+    const container = element.closest("section, header, footer, main, nav, article");
+    if (!container) return "";
+    return cleanText(
+      container.id ||
+      container.getAttribute("aria-label") ||
+      container.className ||
+      container.tagName.toLowerCase()
+    );
+  }
+
+  function getElementIndex(element) {
+    return Array.from(document.querySelectorAll(CLICKABLE_SELECTOR)).indexOf(element) + 1;
+  }
+
+  function getButtonName(element) {
+    const label = getElementLabel(element);
+    const location = getContainerName(element);
+    const href = element.matches("a") ? element.getAttribute("href") || "" : "";
+    return cleanText([location, label, href].filter(Boolean).join(" | "));
   }
 
   function getClickParams(element) {
     const href = element.matches("a") ? element.getAttribute("href") || "" : "";
+    const label = getElementLabel(element);
+    const location = getContainerName(element);
+    const buttonName = getButtonName(element);
+
     return {
-      button_label: getElementLabel(element),
+      event_category: "button",
+      event_label: buttonName || label,
+      button_name: buttonName || label,
+      button_label: label,
       button_role: getElementRole(element),
       button_id: element.id || "",
       button_classes: cleanText(element.className),
+      button_location: location,
+      button_index: getElementIndex(element),
       link_url: href,
       page_path: window.location.pathname,
       page_title: document.title,
-      section_id: findSectionId(element),
       survey_id: element.dataset.surveyId || "",
-      survey_category: element.dataset.category || ""
+      survey_category: element.dataset.category || "",
+      transport_type: "beacon"
     };
   }
 
